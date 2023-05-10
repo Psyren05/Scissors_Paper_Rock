@@ -64,7 +64,7 @@ h1 {
 
 
 .choices {
-    margin: 50px 0;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -74,4 +74,18 @@ h1 {
     margin: 0 20px;
     padding: 10px;
     display: inline-block;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: #24272E;
+    transition: all 0.3s ease;
+}
+
+#action-message {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
 }
