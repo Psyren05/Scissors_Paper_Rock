@@ -16,9 +16,42 @@ function getComputerChoice(){
     return choices[randomNumber];
 }
 
+// game logic
+
+function win() {
+    
+}
+
+function lose() {
+
+}
+
+function draw() {
+
+}
+
 function game(userChoice) {
     const computerChoice = getComputerChoice;
+    switch (userChoice + computerChoice) {
+        case 'rs':
+        case 'pr':
+        case 'sp':
+            win();
 
+        break;
+
+        case 'rp':
+        case 'sr':
+        case 'ps':
+            lose();
+        break;
+
+        case 'ss':
+        case 'pp':
+        case 'rr':
+            draw();
+        break;
+    }
 }
 
 function main() {
